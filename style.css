@@ -1,0 +1,103 @@
+/* Give your page a fun background color */
+body {
+  background: linear-gradient(35deg, #4fe0db, #97db49);
+}
+/* Make the header and footer a different color from the background */
+header, footer {
+  color: black;
+}
+/* Align the h1 containing your name in the center of the header*/
+h1 {
+  text-align: center;
+  display: inline-block;
+  margin: 0px;
+  background-color: white;
+  padding-left: 5px;
+}
+
+/* Put a border around your image */
+img {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+/* Make your p tag a different color and italic */
+p {
+  color: white;
+  font-style: italic;
+}
+
+.top {
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  background:
+    radial-gradient(#2d862d 3px, transparent 4px),
+    radial-gradient(#2d862d 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #2eb82e 75px, #2eb82e 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #2eb82e 76px, #2eb82e 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    box-shadow: -2px -2px 15px black;
+    z-index: 2;
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#navbar li {
+  display: inline;
+  font-size: x-large;
+  padding: 15px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  background-color: white;
+  z-index: 3;
+}
+
+#navbar li:hover {
+  position: relative;
+  transform: scale(1.2);
+  color: white;
+  animation-name: nav-color;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes nav-color {
+  0% {
+    background-color: white;
+    top: -10px;
+  }
+  33% {
+    background-color: #4fe0db;
+    top: 0px;
+  }
+  66% {
+    background-color: #97db49
+  }
+  100% {
+    background-color: #2d862d;
+  }
+}
+/* Change the font-family of your list */
+ul.hobbies {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+ul.hobbies li {
+  color: white;
+}
