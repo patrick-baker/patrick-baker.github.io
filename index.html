@@ -10,32 +10,32 @@
     <script src="helloWorld.js"></script>
 </head>
 <body>
-  <div class="top">
+  <ul id="navbar">
+    <li><a href="#welcome-section">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li>Contact</li>
+  </ul>
+  <div id="welcome-section">
     <!-- Create a header with an <h1> containing your name -->
     <header>
       <h1>Patrick Baker</h1>
     </header>
     <!-- Include an image -->
     <img src="Scenic_selfie1.jpg" alt="Scenic Selfie in Croatia" />
-    <ul id="navbar">
-      <li>Home</li>
-      <li>Education</li>
-      <li>Projects</li>
-      <li>About</li>
-    </ul>
+    <h1 class="about">Hi, I'm Patrick Baker</h1>
+    <h2 class="about">A Web Developer</h2>
   </div>
-    <!-- Create an unordered list with 3 list items of fun facts about you -->
-    <ul class="hobbies">
-      <li>I enjoy books, hiking and anime for entertainment. </li>
-      <li>I like to travel to at least 1 new country every year (This year was Croatia :D) and I speak Russian.</li>
-      <li>I hold the opinion that baseball is the sports-equivalent of chess.</li>
-    </ul>
-    <!-- Create a footer -->
+  <div id="projects">
+    <div class="container">
+      <div class="project-tile" id="tile1"></div>
+      <div class="project-tile" id="tile2"></div>
+      <div class="project-tile" id="tile3"></div>
+    </div>
+  </div>
     <footer>
       <p>
         Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more. - Nikola Tesla
       </p>
     </footer>
-    <!-- Inside your footer, put a <p> with your favorite quote -->
 </body>
 </html>

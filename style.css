@@ -1,13 +1,16 @@
-/* Give your page a fun background color */
 body {
   background: linear-gradient(35deg, #4fe0db, #97db49);
 }
-/* Make the header and footer a different color from the background */
+
+header {
+  position: relative;
+  top: 5%;
+}
 header, footer {
   color: black;
 }
-/* Align the h1 containing your name in the center of the header*/
-h1 {
+
+header h1 {
   text-align: center;
   display: inline-block;
   margin: 0px;
@@ -15,7 +18,6 @@ h1 {
   padding-left: 5px;
 }
 
-/* Put a border around your image */
 img {
   border: 3px solid white;
   border-radius: 50%;
@@ -24,17 +26,39 @@ img {
   margin-left: auto;
   margin-right: auto;
   opacity: 0.9;
+  position: relative;
+  top: 5%;
 }
 
-/* Make your p tag a different color and italic */
-p {
-  color: white;
+footer p {
   font-style: italic;
 }
 
-.top {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.about {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: transparent;
+  opacity: .8;
+  position: relative;
+  top: 5%;
+}
+
+.container {
+
+}
+
+.project-tile {
+  height: 50vh;
+}
+
+#welcome-section {
   text-align: center;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   border-radius: 10px;
   background:
     radial-gradient(#2d862d 3px, transparent 4px),
@@ -51,11 +75,13 @@ p {
 
 #navbar {
   list-style-type: none;
-  margin: 0;
+  margin: 10px;
   padding: 0;
   width: 100%;
   text-align: center;
   z-index: 1;
+  position: sticky;
+  top: 0px;
 }
 
 #navbar li {
@@ -92,12 +118,4 @@ p {
   100% {
     background-color: #2d862d;
   }
-}
-/* Change the font-family of your list */
-ul.hobbies {
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-ul.hobbies li {
-  color: white;
 }
