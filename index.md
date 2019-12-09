@@ -101,7 +101,7 @@
             <h5 class="project-title">To-Do-List</h5>
             <p>To-Do-List application using newly learned PostgresQL technology. Basic CRUD.
               Click
-              <a href="https://github.com/patrick-baker/weekend-sql-to-do-list" target="_blank"
+              <a href="https://github.com/patrick-baker/to-do-list" target="_blank"
                 class="code-link">here</a>
               to see my code.
             </p>
