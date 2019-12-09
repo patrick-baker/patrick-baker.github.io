@@ -1,7 +1,7 @@
 # Portfolio
 ## Description
 
-You can view my portfolio [here](patrick-baker.github.io)
+You can view my portfolio [here](https://patrick-baker.github.io/)
 
 This project uses basic html and css, with bootstrap for its grid component, and jQuery for minor DOM manipulation.
 
