@@ -21,7 +21,7 @@
       <p><a href="#contacts">Contact</a></p>
     </div>
   </div>
-  <div id="header-image" c;ass="section">
+  <div id="header-image" class="section">
     <div id="header-title">
       <h1>PATRICK BAKER</h1>
       <h3>SOFTWARE ENGINEER.</h3>
