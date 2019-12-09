@@ -3,6 +3,8 @@ $(document).ready(readyNow);
 function readyNow() {
     console.log('In jQuery.js');
     setTileHeight(); 
+    $(".project-tile").on("mouseover", showProjectDescription);
+    $(".project-tile").on("mouseout", hideProjectDescription);
 }
 
 window.onscroll = function() {scrollFunction()};
@@ -19,7 +21,18 @@ function scrollFunction() {
 
 // sets height of project tiles
 function setTileHeight() {
-  var projectTile = $('.card-img-top');
+  var projectTile = $('.project-tile');
   var width = projectTile.width();
   projectTile.css('height', width);
 };
+
+// makes project description visible on hover of project tile
+function showProjectDescription() {
+  var projectDescription = $(this).children('.project-description');
+  projectDescription.css("display", "flex");
+}
+
+function hideProjectDescription() {
+  var projectDescription = $(this).children('.project-description');
+  projectDescription.css("display", "none");
+}
