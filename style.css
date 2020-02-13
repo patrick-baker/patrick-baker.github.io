@@ -1,3 +1,4 @@
+/**** General Styling ****/
 * {
   margin: 0;
 }
@@ -8,6 +9,7 @@ a, a:hover {
   text-decoration: none;
 }
 
+/* sets font color for webpage */
 body {
   background: #F0F0F0;
   margin: 0;
@@ -22,10 +24,15 @@ header, footer {
   width: 100vw;
   height: auto;
   overflow: hidden;
-  padding-top: 80px;
+  padding: 40px 0px;
 }
 
-/* Nav Bar */
+p {
+  display: inline-block;
+  font-style: italic;
+}
+
+/**** Nav Bar ****/
 #navbar {
   position: fixed;
   display: flex;
@@ -34,10 +41,9 @@ header, footer {
   z-index: 11;
   padding: 50px 10px 30px 10px;
   transition: .5s;
-  /* width: 100vw; */
   top: 0px;
-  /* overflow: hidden; */
   background: white;
+  /* gives the navbar a material design feel */
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -66,10 +72,10 @@ header, footer {
   animation-fill-mode: forwards;
 }
 
- /* Header Image */
+ /**** Header Image ****/
  #header-image {
     height: 100vh;
-    background: url("Projectphotos/background.jpg") no-repeat bottom center;
+    background: url("Projectphotos/background.jpg") no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -79,14 +85,14 @@ header, footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: .85;
+    opacity: .75;
     padding: 0 0 0 6px;
  }
 
  #header-title {
   color: white;
-  text-shadow: 1px 1px gray;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 2px gray;
+  text-shadow: 2px 3px black;
   text-align: center;
  }
 
@@ -94,7 +100,7 @@ header, footer {
   margin: 30px;
 }
 
- /* About Section */
+ /**** About Section ****/
  #about-section {
    display: flex;
    justify-content: space-between;
@@ -146,8 +152,7 @@ header, footer {
   }
  }
 
-/* Projects */
-
+/**** Projects ****/
  #projects {
   text-align: center;
 }
@@ -245,6 +250,7 @@ header, footer {
   }
  }
 
+ /* Following media queries make the original hover effect show up on page load for mobile and tablet sizes */
  @media (min-width: 768px) and (max-width: 991px) { 
   #projects {
     padding: 80px 20vw;
@@ -275,12 +281,12 @@ header, footer {
   }
  }
 
-/* Contact */
+/**** Contact ****/
 
 #contacts {
 text-align: center;
 background: white;
-height: 100vh;
+padding: 10vh 0px;
 }
 
 #footer-flex {
@@ -317,11 +323,7 @@ height: 100vh;
   padding: 30px 10px;
 }
 
-p {
-  display: inline-block;
-  font-style: italic;
-}
-
+/* break lines in contact section */
 hr {
   width: 75%;
   color:  #F0F0F0;
